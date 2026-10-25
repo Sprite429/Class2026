@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="沈欣楊の自己紹介と、学校生活や将来の目標を紹介します。">
+    <title>自己紹介 | 沈 欣楊</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --accent: #4f46e5;
+            --accent-light: #818cf8;
+            --accent-soft: #f0f1ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 48px 20px;
+            background: #f4f6fb;
+            color: #243047;
+            font-family: "Yu Gothic", "Meiryo", system-ui, sans-serif;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            width: min(100%, 900px);
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: clamp(28px, 6vw, 48px);
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: #fff;
+            box-shadow: 0 16px 36px rgb(79 70 229 / 20%);
+        }
+
+        .hero-label {
+            margin: 0 0 8px;
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            opacity: 0.85;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 6vw, 2.8rem);
+            line-height: 1.3;
+        }
+
+        .hero p:last-child {
+            margin: 12px 0 0;
+            opacity: 0.92;
+        }
+
+        .profile,
+        .section-card {
+            margin-top: 28px;
+            padding: 28px 32px;
+            border: 1px solid #e7eaf1;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 8px 24px rgb(36 48 71 / 5%);
+        }
+
+        h2 {
+            margin: 0 0 18px;
+            color: var(--accent);
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 12px 20px;
+            margin: 0;
+        }
+
+        dt {
+            color: #64708a;
+            font-weight: 700;
+        }
+
+        dd {
+            margin: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        .sections .section-card {
+            margin-top: 22px;
+        }
+
+        .section-card p {
+            margin: 0;
+        }
+
+        .section-card h2 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #edf0f7;
+        }
+
+        .message h2 {
+            color: var(--accent);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 14px;
+            }
+
+            .hero,
+            .profile,
+            .section-card {
+                padding: 24px 20px;
+            }
+
+            .profile,
+            .section-card {
+                margin-top: 18px;
+            }
+
+            .sections {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .sections .section-card {
+                margin-top: 18px;
+            }
+
+            dl {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+
+            dd {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="hero">
+            <p class="hero-label">PROFILE</p>
+            <h1>自己紹介</h1>
+            <p>沈 欣楊です。よろしくお願いします。</p>
+        </header>
+
+        <section class="profile" aria-labelledby="profile-title">
+            <h2 id="profile-title">基本情報</h2>
+            <dl>
+                <dt>名前</dt>
+                <dd>沈 欣楊</dd>
+
+                <dt>出身</dt>
+                <dd>中国・杭州</dd>
+
+                <dt>現在</dt>
+                <dd>日本で勉強しています</dd>
+
+                <dt>学校</dt>
+                <dd>京都コンピューター大学</dd>
+
+                <dt>学籍番号</dt>
+                <dd>R26E2526</dd>
+            </dl>
+        </section>
+
+        <div class="sections">
+            <section class="section-card">
+                <h2>趣味</h2>
+                <p>アニメを見たり、小説を読んだりすることが好きです。また、絵を描くことや、手作りの作品を作ることも好きです。</p>
+            </section>
+
+            <section class="section-card">
+                <h2>学校生活</h2>
+                <p>現在、日本でITについて勉強しています。授業では、プログラミングやウェブサイトの作り方などを学んでいます。まだ難しいこともありますが、少しずつできることを増やしたいです。</p>
+            </section>
+
+            <section class="section-card">
+                <h2>将来の目標</h2>
+                <p>将来は、ITとデザインの知識を活かして、使いやすくて見た目もきれいなウェブサイトやアプリを作りたいです。</p>
+            </section>
+
+            <section class="section-card message">
+                <h2>メッセージ</h2>
+                <p>これからもいろいろなことに挑戦して、自分の知識や技術を身につけていきたいです。よろしくお願いします。</p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
